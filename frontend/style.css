@@ -1,8 +1,36 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    display: flex;
+    display: block;
 }
 
-h1 {
-    
+.header {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+
+.left-column {
+    width: 40%;
+}
+
+.right-column {
+    width: 60%;
+}
+
+textarea {
+    width: 100%;
+}
+
+.due-date {
+    display: flex;
+    justify-content: space-between;
+}
+
+div {
+    padding: 6px
 }
