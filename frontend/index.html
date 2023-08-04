@@ -22,17 +22,17 @@
             <div>
                 <h2>Your todos</h2>
                 <div class="list-items">
-                    <div class="list-item active-item">
+                    <!-- <div class="list-item active-item">
                         <input type="checkbox" name="mark-todo" id="todo-1" />
                         <span class="todo-title">Code up the todo application</span>
                         <input type="button" value="X" onclick="onDelete(event)" />
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
             <div class="new-todo">
                 <input type="text" name="new-todo" id="new-todo" />
-                <input type="button" value="+" onclick="onSubmit()">
+                <input type="button" value="+" onclick="onAdd()">
             </div>
         </div>
 
@@ -44,7 +44,7 @@
 
             <textarea name="description" id="description" rows="15"
                 placeholder="Input todo description here"></textarea>
-            <input type="button" value="Update">
+            <input type="button" value="Update" onclick="onUpdate(event)">
         </div>
 
     </div>

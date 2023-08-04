@@ -34,3 +34,11 @@ textarea {
 div {
     padding: 6px
 }
+
+/* Style active-item class with nice and clean design*/
+.active-item {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
