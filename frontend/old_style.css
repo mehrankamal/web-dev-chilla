@@ -1,0 +1,44 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+}
+
+.header {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+
+.left-column {
+    width: 40%;
+}
+
+.right-column {
+    width: 60%;
+}
+
+textarea {
+    width: 100%;
+}
+
+.due-date {
+    display: flex;
+    justify-content: space-between;
+}
+
+div {
+    padding: 6px
+}
+
+/* Style active-item class with nice and clean design*/
+.active-item {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}

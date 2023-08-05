@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Application</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Todo Application - Getting things done!</h1>
+    </div>
+    <div class="row">
+        <div class="left-column">
+            <div>
+                <h2>Your todos</h2>
+                <div class="list-items">
+                    <!-- <div class="list-item active-item">
+                        <input type="checkbox" name="mark-todo" id="todo-1" />
+                        <span class="todo-title">Code up the todo application</span>
+                        <input type="button" value="X" onclick="onDelete(event)" />
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="new-todo">
+                <input type="text" name="new-todo" id="new-todo" />
+                <input type="button" value="+" onclick="onAdd()">
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="due-date">
+                <label for="due-date-input">Due date</label>
+                <input type="date" name="due-date-input" id="due-date-input">
+            </div>
+
+            <textarea name="description" id="description" rows="15"
+                placeholder="Input todo description here"></textarea>
+            <input type="button" value="Update" onclick="onUpdate(event)">
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

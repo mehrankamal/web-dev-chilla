@@ -14,40 +14,34 @@
 </head>
 
 <body>
-    <div class="header">
-        <h1>Todo Application - Getting things done!</h1>
-    </div>
+    <h1 class="header">To do applications - Getting things done!</h1>
+
     <div class="row">
-        <div class="left-column">
-            <div>
-                <h2>Your todos</h2>
-                <div class="list-items">
-                    <!-- <div class="list-item active-item">
-                        <input type="checkbox" name="mark-todo" id="todo-1" />
-                        <span class="todo-title">Code up the todo application</span>
-                        <input type="button" value="X" onclick="onDelete(event)" />
-                    </div> -->
-                </div>
-            </div>
+        <div class="left-side">
+            <div class="list-items">
 
-            <div class="new-todo">
-                <input type="text" name="new-todo" id="new-todo" />
-                <input type="button" value="+" onclick="onAdd()">
+                <div class="list-item" id="todoId-1">
+                    <input type="checkbox" name="item" id="todoId-1">
+                    <span>first item</span>
+                    <input type="button" value="X">
+                </div>
+
             </div>
+            <!-- <br> -->
+            <input type="text" placeholder="Write the title here">
+            <input type="button" value="+">
         </div>
 
-        <div class="right-column">
-            <div class="due-date">
-                <label for="due-date-input">Due date</label>
-                <input type="date" name="due-date-input" id="due-date-input">
-            </div>
-
-            <textarea name="description" id="description" rows="15"
-                placeholder="Input todo description here"></textarea>
-            <input type="button" value="Update" onclick="onUpdate(event)">
+        <div class="right-side">
+            <input type="date" class="due-date">
+            <br>
+            <textarea placeholder="description" class="description"></textarea>
+            <br>
+            <input type="button" value="Update" class="update-button">
         </div>
 
     </div>
+    <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
     <script src="script.js"></script>
 </body>
 
